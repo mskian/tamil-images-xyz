@@ -1,0 +1,5 @@
+# Netlify redirects file, edit with your domain
+# https://www.netlify.com/docs/redirects/
+
+https://tamilimagesxyz.netlify.com/* https://www.tamilimages.xyz/:splat 301!
+http://tamilimagesxyz.netlify.com/* https://www.tamilimages.xyz/:splat 301!
