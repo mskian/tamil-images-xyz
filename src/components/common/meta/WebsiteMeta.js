@@ -29,6 +29,7 @@ const WebsiteMeta = ({ data, settings, canonical, title, description, image, typ
                 <meta property="og:title" content={title} />
                 <meta property="og:description" content={description} />
                 <meta property="og:url" content={canonical} />
+                {config.siteFBAppID && <meta property="fb:app_id" content={config.siteFBAppID} />}
                 <meta name="twitter:title" content={title} />
                 <meta name="twitter:description" content={description} />
                 <meta name="twitter:url" content={canonical} />

@@ -16,4 +16,5 @@ module.exports = {
     themeColor: `#3498DB`, // Used for Offline Manifest
 
     googleAnalyticsID: `UA-67506568-18`, // Google Analytics
+    siteFBAppID: `371109687084744`,
 }
