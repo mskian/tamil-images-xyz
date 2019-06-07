@@ -27,6 +27,7 @@ const DefaultLayout = ({ data, children, bodyClass }) => {
     <>
         <Helmet>
             <html lang={site.lang} />
+            <style type="text/css">{`${site.codeinjection_styles}`}</style>
             <body className={bodyClass} />
         </Helmet>
 
