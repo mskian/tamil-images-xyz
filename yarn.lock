@@ -809,17 +809,7 @@
   resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-8.0.1.tgz#9712fa2ad124ac64668ab06ba847b1eaf83a03fd"
   integrity sha512-cctMYH5RLbElaUpZn3IJaUj9QNQD8iXDnl7xNY6KB1aFD2ciJrwpo3kvZowIT75uA+silJFDnSR2kGakALUymg==
 
-"@hapi/joi@^14.0.0":
-  version "14.5.0"
-  resolved "https://registry.yarnpkg.com/@hapi/joi/-/joi-14.5.0.tgz#197e06edbd90436150f7f02154a83d0a82753188"
-  integrity sha512-q8oNlQWQpN14j6lMkaQqVdG8km+Ni32ZeuJ+sSOB+5a5VsIY6KVpPvdoMU/XKyAS7P7qP0TgM9fFGC2d8dB6hA==
-  dependencies:
-    "@hapi/hoek" "6.x.x"
-    "@hapi/marker" "1.x.x"
-    "@hapi/topo" "3.x.x"
-    isemail "3.x.x"
-
-"@hapi/joi@^15.1.0":
+"@hapi/joi@^15.0.0", "@hapi/joi@^15.1.0":
   version "15.1.0"
   resolved "https://registry.yarnpkg.com/@hapi/joi/-/joi-15.1.0.tgz#940cb749b5c55c26ab3b34ce362e82b6162c8e7a"
   integrity sha512-n6kaRQO8S+kepUTbXL9O/UOL788Odqs38/VOfoCrATDtTvyfiO3fgjlSRaNkHabpTLgM7qru9ifqXlXbXk8SeQ==
@@ -890,10 +880,10 @@
   resolved "https://registry.yarnpkg.com/@stefanprobst/lokijs/-/lokijs-1.5.6-b.tgz#6a36a86dbe132e702e6b15ffd3ce4139aebfe942"
   integrity sha512-MNodHp46og+Sdde/LCxTLrxcD5Dimu21R/Fer2raXMG1XtHSV2+vZnkIV87OPAxuf2NiDj1W5hN7Q2MYUfQQ8w==
 
-"@tryghost/content-api@1.2.4":
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/@tryghost/content-api/-/content-api-1.2.4.tgz#ae6b88b869501fc2d211fda9c2024e6c08d58f49"
-  integrity sha512-NqfCOV2H1rJaQkFDkN0xjjz/nr9m80z8/T9tL9AjegydAXhcLJv865l+svM+Aumr02XLSKQeADC7WNokrceGiw==
+"@tryghost/content-api@1.2.5":
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/@tryghost/content-api/-/content-api-1.2.5.tgz#b6222d5890cf10a5e97b708891ecac92c14c45e3"
+  integrity sha512-JvZdLrQpG9PtJy7X1YEzTMGdhqvAvBMcOgYDq7RLaCZO3Lt16Qcxgpx+obVq1pERjJV4YLKhdik1hSOGbE3Www==
   dependencies:
     axios "0.19.0"
     ghost-ignition "^3.0.0"
@@ -2392,29 +2382,7 @@ charenc@~0.0.1:
   resolved "https://registry.yarnpkg.com/charenc/-/charenc-0.0.2.tgz#c0a1d2f3a7092e03774bfa83f14c0fc5790a8667"
   integrity sha1-wKHS86cJLgN3S/qD8UwPxXkKhmc=
 
-cheerio@0.22.0:
-  version "0.22.0"
-  resolved "https://registry.yarnpkg.com/cheerio/-/cheerio-0.22.0.tgz#a9baa860a3f9b595a6b81b1a86873121ed3a269e"
-  integrity sha1-qbqoYKP5tZWmuBsahocxIe06Jp4=
-  dependencies:
-    css-select "~1.2.0"
-    dom-serializer "~0.1.0"
-    entities "~1.1.1"
-    htmlparser2 "^3.9.1"
-    lodash.assignin "^4.0.9"
-    lodash.bind "^4.1.4"
-    lodash.defaults "^4.0.1"
-    lodash.filter "^4.4.0"
-    lodash.flatten "^4.2.0"
-    lodash.foreach "^4.3.0"
-    lodash.map "^4.4.0"
-    lodash.merge "^4.4.0"
-    lodash.pick "^4.2.1"
-    lodash.reduce "^4.4.0"
-    lodash.reject "^4.4.0"
-    lodash.some "^4.4.0"
-
-cheerio@^1.0.0-rc.2, cheerio@^1.0.0-rc.3:
+cheerio@1.0.0-rc.3, cheerio@^1.0.0-rc.2, cheerio@^1.0.0-rc.3:
   version "1.0.0-rc.3"
   resolved "https://registry.yarnpkg.com/cheerio/-/cheerio-1.0.0-rc.3.tgz#094636d425b2e9c0f4eb91a46c05630c9a1a8bf6"
   integrity sha512-0td5ijfUPuubwLUu0OBoe98gZj8C/AA+RW3v67GPlGOrvxWjZmBXiBCRU+I8VEiNyJzjth40POfHiz2RB3gImA==
@@ -3607,7 +3575,7 @@ dom-helpers@^3.2.1:
   dependencies:
     "@babel/runtime" "^7.1.2"
 
-dom-serializer@0, dom-serializer@~0.1.0, dom-serializer@~0.1.1:
+dom-serializer@0, dom-serializer@~0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/dom-serializer/-/dom-serializer-0.1.1.tgz#1ec4059e284babed36eec2941d4a970a189ce7c0"
   integrity sha512-l0IU0pPzLWSHBcieZbpOKgkIn3ts3vAh7ZuFyXNwJxJXk/c4Gwj9xaTJwIDVQCXawWD0qb3IzMGH5rglQaO0XA==
@@ -4841,12 +4809,12 @@ fs-exists-cached@1.0.0, fs-exists-cached@^1.0.0:
   resolved "https://registry.yarnpkg.com/fs-exists-cached/-/fs-exists-cached-1.0.0.tgz#cf25554ca050dc49ae6656b41de42258989dcbce"
   integrity sha1-zyVVTKBQ3EmuZla0HeQiWJidy84=
 
-fs-extra@8.0.1:
-  version "8.0.1"
-  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-8.0.1.tgz#90294081f978b1f182f347a440a209154344285b"
-  integrity sha512-W+XLrggcDzlle47X/XnS7FXrXu9sDo+Ze9zpndeBxdgv88FHLm1HtmkhEwavruS6koanBjp098rUpHs65EmG7A==
+fs-extra@8.1.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-8.1.0.tgz#49d43c45a88cd9677668cb7be1b46efdb8d2e1c0"
+  integrity sha512-yhlQgA6mnOJUKOsRUFsgJdQCvkKhcz8tlZG5HBQfReYZy46OwLcY+Zia0mtdHsOo9y/hP+CxMN0TU9QxoOtG4g==
   dependencies:
-    graceful-fs "^4.1.2"
+    graceful-fs "^4.2.0"
     jsonfile "^4.0.0"
     universalify "^0.1.0"
 
@@ -5036,24 +5004,24 @@ gatsby-page-utils@^0.0.2:
     micromatch "^3.1.10"
     slash "^1.0.0"
 
-gatsby-plugin-advanced-sitemap@1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-advanced-sitemap/-/gatsby-plugin-advanced-sitemap-1.1.1.tgz#8067f6875db10caa11f688ac2e4f318cc5c13485"
-  integrity sha512-yEg+UOLmYTzXQ9whZas5oObebx67HnWi/9WZ000GcXBGqmGxMPX43Hqam6CpBhpr/N28KOYvk46selw7Ed3EEw==
+gatsby-plugin-advanced-sitemap@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-advanced-sitemap/-/gatsby-plugin-advanced-sitemap-1.2.0.tgz#4f9f8005fdb4f162c5e91141dcbcf79cbb0c8751"
+  integrity sha512-tY9RnUIdbD/qnAisIA6G7Njz2o9op3MSgZqBwJ/nxVvbDaIAxEfXpM5B712YOG/KIie874uwFaMENNgs5MCAnA==
   dependencies:
     "@babel/runtime" "7.4.5"
-    fs-extra "8.0.1"
+    fs-extra "8.1.0"
     lodash "^4.17.11"
     moment "^2.24.0"
     xml "^1.0.1"
 
-gatsby-plugin-feed@2.3.1:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-2.3.1.tgz#1346a46878539aa37caa589ef4861621c3d27198"
-  integrity sha512-fgzvR/8ZOqYxqvt/1Yjjn98Ccrsy7cIemyQUtK7tmuZ0DZBJrttAOfAp9cIcn0+z70QYVwk31rzTBWEys0qbkA==
+gatsby-plugin-feed@2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-2.3.2.tgz#fc20c7c757c38a714df8f5e71a1cac5b129d15c7"
+  integrity sha512-n+RkfLEtgtt9CbVnmIzVD5WjqEFi4heE5a78aT3tCTRpx04rkHpvGowe0NF4RzsiSuM2+Obmbzy/il0HkmCzIA==
   dependencies:
     "@babel/runtime" "^7.0.0"
-    "@hapi/joi" "^14.0.0"
+    "@hapi/joi" "^15.0.0"
     fs-extra "^7.0.1"
     lodash.merge "^4.6.0"
     rss "^1.2.2"
@@ -5185,14 +5153,14 @@ gatsby-source-filesystem@2.1.2:
     valid-url "^1.0.9"
     xstate "^3.1.0"
 
-gatsby-source-ghost@3.4.2:
-  version "3.4.2"
-  resolved "https://registry.yarnpkg.com/gatsby-source-ghost/-/gatsby-source-ghost-3.4.2.tgz#455bcd1bad312dcee065171baf33834851165fd4"
-  integrity sha512-AvuGy2DUVrriBdsJ1cbmF+umT5Rab34406j9k9i7sTwWWvsLAc5+xdcHBmRVcdwm1PRMuLGJDUfvkT/+coOpZg==
+gatsby-source-ghost@3.4.3:
+  version "3.4.3"
+  resolved "https://registry.yarnpkg.com/gatsby-source-ghost/-/gatsby-source-ghost-3.4.3.tgz#7fbb016cbb67df40faf0c984a421d7c71fa63dbd"
+  integrity sha512-gz5q+GPC5NtjoCeUT5zj03dZthfKafJTSZ7ztXY2rWPvuORDX4WsHtRedC5Q4c03qKmrO4U5ke8SEEtnrnd7qA==
   dependencies:
-    "@tryghost/content-api" "1.2.4"
+    "@tryghost/content-api" "1.2.5"
     bluebird "3.5.5"
-    cheerio "0.22.0"
+    cheerio "1.0.0-rc.3"
     gatsby-node-helpers "^0.3.0"
     qs "6.7.0"
 
@@ -5231,10 +5199,10 @@ gatsby-transformer-sharp@2.2.1:
     semver "^5.6.0"
     sharp "^0.22.1"
 
-gatsby@2.13.1:
-  version "2.13.1"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.13.1.tgz#af55152ed738cf3918e9b3cc16a7991863da70ce"
-  integrity sha512-6Ki0tE//9iaqz3hqG6jXuRsFJOwJ1JhMHlbIkon8+8Yla+dI69kZCCrmHeAAgLB/d+PzPMr6dko3FRKjRPAo9w==
+gatsby@2.13.3:
+  version "2.13.3"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.13.3.tgz#55aebf9d2eaee3fd58d788847dc179b19c2f2ebb"
+  integrity sha512-sAK4DOK+Wfhb6S948xcV2kTSpQXpMfNSZQa0d6TdYxDbBMaJxH9CNqeqTYAzx5inomIFrzfDC3FLyBcqa2iWsQ==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
@@ -5243,7 +5211,7 @@ gatsby@2.13.1:
     "@babel/runtime" "^7.0.0"
     "@babel/traverse" "^7.0.0"
     "@gatsbyjs/relay-compiler" "2.0.0-printer-fix.2"
-    "@hapi/joi" "^14.0.0"
+    "@hapi/joi" "^15.0.0"
     "@mikaelkristiansson/domready" "^1.0.9"
     "@pieh/friendly-errors-webpack-plugin" "1.7.0-chalk-2"
     "@reach/router" "^1.1.1"
@@ -5691,6 +5659,11 @@ graceful-fs@^4.1.10, graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.
   version "4.1.15"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.15.tgz#ffb703e1066e8a0eeaa4c8b80ba9253eeefbfb00"
   integrity sha512-6uHUhOPEBgQ24HM+r6b/QwWfZq+yiFcipKFrOFiBEnWdy5sdzYoi+pJeQaPI5qOLRFqWmAXUPQNsielzdLoecA==
+
+graceful-fs@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.0.tgz#8d8fdc73977cb04104721cb53666c1ca64cd328b"
+  integrity sha512-jpSvDPV4Cq/bgtpndIWbI5hmYxhQGHPC4d4cqBPb4DLniCfhJokdXhwhaDuLBGLQdvvRum/UiX6ECVIPvDXqdg==
 
 "graceful-readlink@>= 1.0.0":
   version "1.0.1"
@@ -7167,47 +7140,22 @@ lodash._reinterpolate@~3.0.0:
   resolved "https://registry.yarnpkg.com/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
   integrity sha1-DM8tiRZq8Ds2Y8eWU4t1rG4RTZ0=
 
-lodash.assignin@^4.0.9:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/lodash.assignin/-/lodash.assignin-4.2.0.tgz#ba8df5fb841eb0a3e8044232b0e263a8dc6a28a2"
-  integrity sha1-uo31+4QesKPoBEIysOJjqNxqKKI=
-
-lodash.bind@^4.1.4:
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/lodash.bind/-/lodash.bind-4.2.1.tgz#7ae3017e939622ac31b7d7d7dcb1b34db1690d35"
-  integrity sha1-euMBfpOWIqwxt9fX3LGzTbFpDTU=
-
-lodash.defaults@^4.0.1:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/lodash.defaults/-/lodash.defaults-4.2.0.tgz#d09178716ffea4dde9e5fb7b37f6f0802274580c"
-  integrity sha1-0JF4cW/+pN3p5ft7N/bwgCJ0WAw=
-
 lodash.every@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.every/-/lodash.every-4.6.0.tgz#eb89984bebc4364279bb3aefbbd1ca19bfa6c6a7"
   integrity sha1-64mYS+vENkJ5uzrvu9HKGb+mxqc=
-
-lodash.filter@^4.4.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/lodash.filter/-/lodash.filter-4.6.0.tgz#668b1d4981603ae1cc5a6fa760143e480b4c4ace"
-  integrity sha1-ZosdSYFgOuHMWm+nYBQ+SAtMSs4=
-
-lodash.flatten@^4.2.0:
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/lodash.flatten/-/lodash.flatten-4.4.0.tgz#f31c22225a9632d2bbf8e4addbef240aa765a61f"
-  integrity sha1-8xwiIlqWMtK7+OSt2+8kCqdlph8=
 
 lodash.flattendeep@^4.4.0:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/lodash.flattendeep/-/lodash.flattendeep-4.4.0.tgz#fb030917f86a3134e5bc9bec0d69e0013ddfedb2"
   integrity sha1-+wMJF/hqMTTlvJvsDWngAT3f7bI=
 
-lodash.foreach@^4.3.0, lodash.foreach@^4.5.0:
+lodash.foreach@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.foreach/-/lodash.foreach-4.5.0.tgz#1a6a35eace401280c7f06dddec35165ab27e3e53"
   integrity sha1-Gmo16s5AEoDH8G3d7DUWWrJ+PlM=
 
-lodash.map@^4.4.0, lodash.map@^4.6.0:
+lodash.map@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.map/-/lodash.map-4.6.0.tgz#771ec7839e3473d9c4cde28b19394c3562f4f6d3"
   integrity sha1-dx7Hg540c9nEzeKLGTlMNWL09tM=
@@ -7222,30 +7170,10 @@ lodash.memoize@^4.1.2:
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
   integrity sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4=
 
-lodash.merge@^4.4.0, lodash.merge@^4.6.0:
+lodash.merge@^4.6.0:
   version "4.6.1"
   resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.1.tgz#adc25d9cb99b9391c59624f379fbba60d7111d54"
   integrity sha512-AOYza4+Hf5z1/0Hztxpm2/xiPZgi/cjMqdnKTUWTBSKchJlxXXuUSxCCl8rJlf4g6yww/j6mA8nC8Hw/EZWxKQ==
-
-lodash.pick@^4.2.1:
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/lodash.pick/-/lodash.pick-4.4.0.tgz#52f05610fff9ded422611441ed1fc123a03001b3"
-  integrity sha1-UvBWEP/53tQiYRRB7R/BI6AwAbM=
-
-lodash.reduce@^4.4.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/lodash.reduce/-/lodash.reduce-4.6.0.tgz#f1ab6b839299ad48f784abbf476596f03b914d3b"
-  integrity sha1-8atrg5KZrUj3hKu/R2WW8DuRTTs=
-
-lodash.reject@^4.4.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/lodash.reject/-/lodash.reject-4.6.0.tgz#80d6492dc1470864bbf583533b651f42a9f52415"
-  integrity sha1-gNZJLcFHCGS79YNTO2UfQqn1JBU=
-
-lodash.some@^4.4.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/lodash.some/-/lodash.some-4.6.0.tgz#1bb9f314ef6b8baded13b549169b2a945eb68e4d"
-  integrity sha1-G7nzFO9ri63tE7VJFpsqlF62jk0=
 
 lodash.template@^4.4.0:
   version "4.4.0"
