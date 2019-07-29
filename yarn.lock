@@ -902,19 +902,19 @@
     axios "0.19.0"
     ghost-ignition "^3.0.0"
 
-"@tryghost/helpers-gatsby@1.0.9":
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/@tryghost/helpers-gatsby/-/helpers-gatsby-1.0.9.tgz#9786dc4926a83dc4cf3c677bc36c81cb2a6ed974"
-  integrity sha512-3S0nMVoPf4RKWIw3aU0zfcCyfX7qjWsLlwpklEdCXqO7a06wn6qBDbEmcgw5afjCkwrYiJwWDTW4kcOWLV0JFA==
+"@tryghost/helpers-gatsby@1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@tryghost/helpers-gatsby/-/helpers-gatsby-1.0.10.tgz#67aac0164eb86086dc9ffb906fcd62cbede818c3"
+  integrity sha512-BKq2lWsr9usJ6+qY4DFzV0LfYItZBELitpucZhGGt4o/kUtKwc0XgzWucv+oVPuSbM8zdFD6hlbrW8HrO1dC1Q==
   dependencies:
-    "@tryghost/helpers" "^1.1.6"
+    "@tryghost/helpers" "^1.1.7"
     gatsby-link "^2.0.7"
     prop-types "^15.6.2"
 
-"@tryghost/helpers@1.1.6", "@tryghost/helpers@^1.1.6":
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/@tryghost/helpers/-/helpers-1.1.6.tgz#70b48f2155a31aeb0ced6ed830c1134d11467f32"
-  integrity sha512-If1j4u9FGMy0RvcJpdpYFq7iwi56AXRUCV4Xob7QfH0eov2zirXdcjyStBlTsrVUB0nBj3w172S3TQNh0B2B+Q==
+"@tryghost/helpers@1.1.7", "@tryghost/helpers@^1.1.7":
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/@tryghost/helpers/-/helpers-1.1.7.tgz#3c2c67f4b57162f273bbc2884ec450f746f7fc15"
+  integrity sha512-in0E3+Qy7osyX7+65Y0PJliq4wxKazBVKDn1i8P34mcMUYeZ4HtCofi+TJOClCjeJQtSZsPcq4lb1Y7YvOydnQ==
   dependencies:
     lodash-es "^4.17.11"
 
