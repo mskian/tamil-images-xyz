@@ -75,6 +75,7 @@ module.exports = {
                 orientation: `any`,
                 display: `standalone`,
                 icon: `static/${config.siteIcon}`,
+                legacy: true,
                 query: `
                 {
                     allGhostSettings {
