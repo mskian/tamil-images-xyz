@@ -1215,20 +1215,20 @@
     axios "0.19.0"
     ghost-ignition "^3.0.0"
 
-"@tryghost/helpers-gatsby@1.0.15":
-  version "1.0.15"
-  resolved "https://registry.yarnpkg.com/@tryghost/helpers-gatsby/-/helpers-gatsby-1.0.15.tgz#202561294decdf3cce458f585dbf51124865b564"
-  integrity sha512-nXZMGzwfKBrUM+jw8+a+dlW4dHHd9BbUqryQ2Z5+IgPCvD7y8ES/sCmUDeDN1Eaejqqmd1hQzNjXm43/AcC13g==
+"@tryghost/helpers-gatsby@1.0.18":
+  version "1.0.18"
+  resolved "https://registry.yarnpkg.com/@tryghost/helpers-gatsby/-/helpers-gatsby-1.0.18.tgz#0b54fe1dc476067300d66e26aeca4ba252bee6b0"
+  integrity sha512-PMiQS3CtWu1x4gI+ic7Xt1QaEHMUdW/H3qASECsmDAM507hpc7ilkiSqp7LJKq7L9vd33Ay7EAELBo+pcvOD+g==
   dependencies:
     "@reach/router" "^1.2.1"
-    "@tryghost/helpers" "^1.1.12"
+    "@tryghost/helpers" "^1.1.15"
     gatsby-link "^2.0.7"
     prop-types "^15.6.2"
 
-"@tryghost/helpers@1.1.12", "@tryghost/helpers@^1.1.12":
-  version "1.1.12"
-  resolved "https://registry.yarnpkg.com/@tryghost/helpers/-/helpers-1.1.12.tgz#ca77aa2649abd2d12760b36af2d6779619202971"
-  integrity sha512-9ns/YTXfUb+UOmILQq071qZ8Y6eIEvNQFLZtFiguhOzXqSHC+rKg45aNCcoP8G9opG7vmm7bkxeE/hiQ205qpw==
+"@tryghost/helpers@1.1.15", "@tryghost/helpers@^1.1.15":
+  version "1.1.15"
+  resolved "https://registry.yarnpkg.com/@tryghost/helpers/-/helpers-1.1.15.tgz#8a8e53af47630707aeb328fc949ce37464f7d447"
+  integrity sha512-llve/Ha+uUnqrqP4TlGIXf+W5nDRv6XsiqLWoUFARtciP42kMQLQY+ABC4Fmc0N1daD1P020jTjd7eX+9fdVFw==
   dependencies:
     lodash-es "^4.17.11"
 
@@ -10243,16 +10243,7 @@ react-side-effect@^1.1.0:
   dependencies:
     shallowequal "^1.0.1"
 
-react@16.10.2:
-  version "16.10.2"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.10.2.tgz#a5ede5cdd5c536f745173c8da47bda64797a4cf0"
-  integrity sha512-MFVIq0DpIhrHFyqLU0S3+4dIcBhhOvBE8bJ/5kHPVOVaGdo0KuiQzpcjCPsf585WvhypqtrMILyoE2th6dT+Lw==
-  dependencies:
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
-    prop-types "^15.6.2"
-
-react@^16.10.2:
+react@16.10.2, react@^16.10.2:
   version "16.10.2"
   resolved "https://registry.yarnpkg.com/react/-/react-16.10.2.tgz#a5ede5cdd5c536f745173c8da47bda64797a4cf0"
   integrity sha512-MFVIq0DpIhrHFyqLU0S3+4dIcBhhOvBE8bJ/5kHPVOVaGdo0KuiQzpcjCPsf585WvhypqtrMILyoE2th6dT+Lw==
