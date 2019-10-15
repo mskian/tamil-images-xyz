@@ -8,15 +8,16 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    - uses: actions/checkout@v1
     - uses: actions/setup-node@v1
       with:
          node-version: '10.x'
-    - uses: actions/checkout@v1
+    - name: install Gatsby CLi
+      run: npm i -g gatsby-cli
+    - name: Import the Gatsby site API and Key
       with:
         apiUrl: ${{ secrets.GHOST_API_URL }}
         contentApiKey: ${{ secrets.GHOST_CONTENT_API_KEY }}
-    - name: install Gatsby CLi
-      run: npm i -g gatsby-cli
     - name: Install packages via yarn and Build the Site
       run: |
         yarn
