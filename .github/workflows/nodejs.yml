@@ -15,7 +15,7 @@ jobs:
     - name: install Gatsby CLi
       run: npm i -g gatsby-cli
     - name: Install HTTPie Client
-      run: apt-get install httpie
+      run: sudo apt-get install httpie
     - name: Install packages via yarn and Build the Site
       env:
         GHOST_API_URL: ${{ secrets.GHOST_API_URL }}
