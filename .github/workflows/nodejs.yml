@@ -16,7 +16,6 @@ jobs:
       run: npm i -g gatsby-cli
     - name: Install HTTPie Client
       run: |
-        pip install --upgrade pip setuptools
         pip install --upgrade httpie
     - name: Install packages via yarn and Build the Site
       env:
