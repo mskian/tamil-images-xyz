@@ -16,19 +16,19 @@
     "packageRules": [
       {
         "packagePatterns": ["^eslint"],
-        "groupName": "eslint"
+        "groupName": "eslint packages"
       },
       {
-        "packagePatterns": ["gatsby"],
-        "groupName": "gatsby"
+        "packagePatterns": ["^gatsby"],
+        "groupName": "gatsby Packages"
       },
       {
-        "packagePatterns": ["@tryghost"],
-        "groupName": "@tryghost"
+        "packagePatterns": ["^@tryghost"],
+        "groupName": "Tryghost Packages"
       },
       {
         "packageNames": ["react", "react-dom"],
-        "groupName": "react"
+        "groupName": "react Packages"
       }
     ],
     "labels": ["renovate"],
