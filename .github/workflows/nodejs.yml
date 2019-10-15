@@ -9,12 +9,11 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-      with:
-        apiUrl: ${{ secrets.GHOST_API_URL }}
-        contentApiKey: ${{ secrets.GHOST_CONTENT_API_KEY }}
     - uses: actions/setup-node@v1
       with:
          node-version: '10.x'
+         apiUrl: ${{ secrets.GHOST_API_URL }}
+         contentApiKey: ${{ secrets.GHOST_CONTENT_API_KEY }}
     - name: install Gatsby CLi
       run: npm i -g gatsby-cli
     - name: Install packages via yarn and Build the Site
