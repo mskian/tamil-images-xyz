@@ -10,8 +10,8 @@ jobs:
     steps:
     - uses: actions/checkout@v1
       with:
-         apiUrl: ${{ secrets.GHOST_API_URL }},
-         contentApiKey: ${{ secrets.GHOST_CONTENT_API_KEY }}
+        apiUrl: ${{ secrets.GHOST_API_URL }}
+        contentApiKey: ${{ secrets.GHOST_CONTENT_API_KEY }}
     - uses: actions/setup-node@v1
       with:
          node-version: '10.x'
