@@ -1,41 +1,40 @@
 {
-    "extends": [
-      "config:base"
-    ],
-    "automerge": true,
-    "major": {
-      "automerge": false
-    },
-    "ignoreDeps": [
-        "gatsby-source-ghost",
-        "gatsby-plugin-advanced-sitemap"
-    ],
-    "ignorePaths": [
-      "plugins/gatsby-plugin-ghost-manifest"
-    ],
-    "packageRules": [
-      {
-        "packagePatterns": ["^eslint"],
-        "groupName": "eslint packages"
-      },
-      {
-        "packagePatterns": ["^gatsby"],
-        "groupName": "gatsby Packages"
-      },
-      {
-        "packagePatterns": ["^@tryghost"],
-        "groupName": "Tryghost Packages"
-      },
-      {
-        "packageNames": ["react", "react-dom"],
-        "groupName": "react Packages"
-      }
-    ],
-    "labels": ["renovate"],
-    "prHourlyLimit": 4,
-    "prConcurrentLimit": 15,
-    "rangeStrategy": "bump",
-    "bumpVersion": null,
-    "semanticCommits": true,
-    "schedule": "before 8am on Monday"
-  }
+	"extends": [
+		"config:base"
+	],
+	"automerge": true,
+	"major": {
+		"automerge": false
+	},
+	"ignoreDeps": [
+		"gatsby-source-ghost",
+		"gatsby-plugin-advanced-sitemap"
+	],
+	"ignorePaths": [
+		"plugins/gatsby-plugin-ghost-manifest"
+	],
+	"packageRules": [{
+			"packagePatterns": ["^eslint"],
+			"groupName": "eslint"
+		},
+		{
+			"packagePatterns": ["gatsby"],
+			"groupName": "gatsby"
+		},
+		{
+			"packagePatterns": ["@tryghost"],
+			"groupName": "@tryghost"
+		},
+		{
+			"packageNames": ["react", "react-dom"],
+			"groupName": "react"
+		}
+	],
+	"labels": ["renovate"],
+	"prHourlyLimit": 4,
+	"prConcurrentLimit": 15,
+	"rangeStrategy": "bump",
+	"bumpVersion": null,
+	"semanticCommits": true,
+	"schedule": "before 8am on Monday"
+}
