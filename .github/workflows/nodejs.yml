@@ -16,9 +16,9 @@ jobs:
       run: npm i -g gatsby-cli
     - name: Import the Gatsby site API and Key
     - name: Install packages via yarn and Build the Site
+      env:
+        apiUrl: ${{ secrets.GHOST_API_URL }}
+        contentApiKey: ${{ secrets.GHOST_CONTENT_API_KEY }}
       run: |
         yarn
         yarn build
-      with:
-        apiUrl: ${{ secrets.GHOST_API_URL }}
-        contentApiKey: ${{ secrets.GHOST_CONTENT_API_KEY }}
