@@ -1,0 +1,20 @@
+name: tamil-images-xyz
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-node@v1
+      with:
+         node-version: '10.x'
+    - name: install Gatsby CLi
+      run: npm i -g gatsby-cli
+    - name: Install packages via yarn and Build the Site
+      run: |
+        yarn
+        yarn build
