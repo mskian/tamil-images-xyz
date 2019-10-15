@@ -23,10 +23,10 @@ jobs:
         yarn build
     - name: Send Telegram Alert After Build
       run: |
-        curl -s \
+        curl --silent --output /dev/null \
           -X POST \
           ${{ secrets.TELEGRAM_TOKEN }} \
           -d text="New Push Event triggered on Gatsby Tamil Images on Github" \
           -d chat_id=${{ secrets.TELEGRAM_TO }}
     - name: Send Gotify Push Alert After Build
-      run: curl -X POST "${{ secrets.GOTIFY_URL }}" -F "title=Github" -F "message=New Push Event triggered on Gatsby Tamil Images on Github" -F "priority=5"
+      run: curl --silent --output /dev/null -X POST "${{ secrets.GOTIFY_URL }}" -F "title=Github" -F "message=New Push Event triggered on Gatsby Tamil Images on Github" -F "priority=5"
