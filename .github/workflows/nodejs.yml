@@ -31,7 +31,5 @@ jobs:
          New ${{ github.event_name }} event triggered on Gatsby Tamil Images.
     - name: Send Gotify Push Alert After Build
       uses: swinton/httpie.action@master
-      env:
-        GOTIFY_URL: ${{ secrets.GOTIFY_URL }}
       with:
-        args: "POST", "httpbin.org/anything", "title=world", "message=New Github Action Workflow on Gatsby Tamil Images."
+        args: "POST", "${{ secrets.GOTIFY_URL }}", "title=world", "message=New Github Action Workflow on Gatsby Tamil Images."
