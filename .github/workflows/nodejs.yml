@@ -21,3 +21,10 @@ jobs:
       run: |
         yarn
         yarn build
+    - name: Send Telegram Alert After Build
+      uses: appleboy/telegram-action@master
+      env:
+        TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+        TELEGRAM_TO: ${{ secrets.TELEGRAM_TO }}
+      with:
+        args: The ${{ github.action }} event triggered first step.
