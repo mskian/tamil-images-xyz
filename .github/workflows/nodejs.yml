@@ -14,9 +14,6 @@ jobs:
          node-version: '10.x'
     - name: install Gatsby CLi
       run: npm i -g gatsby-cli
-    - name: Install HTTPie Client
-      run: |
-        pip install --upgrade httpie
     - name: Install packages via yarn and Build the Site
       env:
         GHOST_API_URL: ${{ secrets.GHOST_API_URL }}
@@ -33,4 +30,4 @@ jobs:
         message: |
          New Push Event triggered on Gatsby Tamil Images on Github.
     - name: Send Gotify Push Alert After Build
-      run: http POST --ignore-stdin ${{ secrets.GOTIFY_URL }} title=Github message='New Push Event triggered on Gatsby Tamil Images on Github'
+      run: curl -X POST "${{ secrets.GOTIFY_URL }}" -F "title=Github" -F "message=New Push Event triggered on Gatsby Tamil Images on Github" -F "priority=5"
