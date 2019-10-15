@@ -9,6 +9,7 @@ jobs:
     
     steps:
     - uses: actions/checkout@master
+    - uses: swinton/httpie.action@master
     - uses: actions/setup-node@v1
       with:
          node-version: '10.x'
@@ -28,10 +29,8 @@ jobs:
         TELEGRAM_TO: ${{ secrets.TELEGRAM_TO }}
       with:
         message: |
-         New ${{ github.event_name }} event triggered on Gatsby Tamil Images.
+         New Push Event triggered on Gatsby Tamil Images on Github.
     - name: Send Gotify Push Alert After Build
-      uses: swinton/httpie.action@master
       env:
         GOTIFY_URL: ${{ secrets.GOTIFY_URL }}
-      with:
-        args: "POST, GOTIFY_URL, title=world, message=New Github Action Workflow on Gatsby Tamil Images"
+      run: http -f POST GOTIFY_URL title=world message=New Github Action Workflow on Gatsby Tamil Images
