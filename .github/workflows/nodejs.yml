@@ -34,4 +34,4 @@ jobs:
     - name: Send Gotify Push Alert After Build
       env:
         GOTIFY_URL: ${{ secrets.GOTIFY_URL }}
-      run: http --form POST GOTIFY_URL title=Github message='New Push Event triggered on Gatsby Tamil Images on Github'
+      run: http POST GOTIFY_URL title=Github message='New Push Event triggered on Gatsby Tamil Images on Github'
