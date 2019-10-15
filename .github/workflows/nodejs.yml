@@ -22,12 +22,11 @@ jobs:
         yarn
         yarn build
     - name: Send Telegram Alert After Build
-      uses: appleboy/telegram-action@master
-      env:
-        TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
-        TELEGRAM_TO: ${{ secrets.TELEGRAM_TO }}
-      with:
-        message: |
-         New Push Event triggered on Gatsby Tamil Images on Github.
+      run: |
+        curl -s \
+          -X POST \
+          ${{ secrets.TELEGRAM_TOKEN }} \
+          -d text="New Push Event triggered on Gatsby Tamil Images on Github" \
+          -d chat_id=${{ secrets.TELEGRAM_TO }}
     - name: Send Gotify Push Alert After Build
       run: curl -X POST "${{ secrets.GOTIFY_URL }}" -F "title=Github" -F "message=New Push Event triggered on Gatsby Tamil Images on Github" -F "priority=5"
