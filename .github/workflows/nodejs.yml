@@ -9,12 +9,13 @@ jobs:
     
     steps:
     - uses: actions/checkout@master
-    - uses: swinton/httpie.action@master
     - uses: actions/setup-node@v1
       with:
          node-version: '10.x'
     - name: install Gatsby CLi
       run: npm i -g gatsby-cli
+    - name: Install HTTPie Client
+      run: apt-get install httpie
     - name: Install packages via yarn and Build the Site
       env:
         GHOST_API_URL: ${{ secrets.GHOST_API_URL }}
