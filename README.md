@@ -1,6 +1,6 @@
 # Tamil Images
 
-![Netlify Status](https://api.netlify.com/api/v1/badges/22c7497e-8986-4e25-9628-62f7c9b19b4c/deploy-status) [![Build Status](https://travis-ci.org/mskian/tamil-images-xyz.svg?branch=master)](https://travis-ci.org/mskian/tamil-images-xyz) [![dependencies Status](https://david-dm.org/mskian/tamil-images-xyz/status.svg?style=flat-square)](https://david-dm.org/mskian/tamil-images-xyz) ![deploys by netlify](https://img.shields.io/badge/deploys%20by-netlify-00c7b7.svg?style=flat-square)  
+![Netlify Status](https://api.netlify.com/api/v1/badges/22c7497e-8986-4e25-9628-62f7c9b19b4c/deploy-status) [![Build Status](https://travis-ci.org/mskian/tamil-images-xyz.svg?branch=master)](https://travis-ci.org/mskian/tamil-images-xyz) [![dependencies Status](https://david-dm.org/mskian/tamil-images-xyz/status.svg?style=flat-square)](https://david-dm.org/mskian/tamil-images-xyz) ![deploys by netlify](https://img.shields.io/badge/deploys%20by-netlify-00c7b7.svg?style=flat-square) [![Github Workflow](https://github.com/mskian/tamil-images-xyz/workflows/tamil-images-xyz/badge.svg)](https://github.com/mskian/tamil-images-xyz/actions)  
 
 Tamil Images Blog 😃
 
