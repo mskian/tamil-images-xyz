@@ -27,4 +27,5 @@ jobs:
         TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
         TELEGRAM_TO: ${{ secrets.TELEGRAM_TO }}
       with:
-        args: The ${{ github.action }} event triggered first step.
+        message: |
+         The ${{ github.event_name }} event triggered.
