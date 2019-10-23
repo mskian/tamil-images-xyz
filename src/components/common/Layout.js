@@ -24,49 +24,49 @@ const DefaultLayout = ({ data, children, bodyClass }) => {
     //const facebookUrl = site.facebook ? `https://www.facebook.com/${site.facebook.replace(/^\//, ``)}` : null
 
     return (
-    <>
-        <Helmet>
-            <html lang={site.lang} />
-            <style type="text/css">{`${site.codeinjection_styles}`}</style>
-            <body className={bodyClass} />
-        </Helmet>
+        <>
+            <Helmet>
+                <html lang={site.lang} />
+                <style type="text/css">{`${site.codeinjection_styles}`}</style>
+                <body className={bodyClass} />
+            </Helmet>
 
-        <div className="viewport">
+            <div className="viewport">
 
-            <div className="viewport-top">
-                {/* The main header section on top of the screen */}
-                <header className="site-head">
-                    <div className="container">
-                        <nav className="site-nav">
-                            <div className="site-nav-left">
-                                {/* The navigation items as setup in Ghost */}
-                                <Navigation data={site.navigation} navClass="site-nav-item" />
-                            </div>
-                        </nav>
-                    </div>
-                </header>
-
-                <main className="site-main">
-                    {/* All the main content gets inserted here, index.js, post.js */}
-                    {children}
-                </main>
-
-            </div>
-
-            <div className="viewport-bottom">
-                {/* The footer at the very bottom of the screen */}
-                <footer className="site-foot">
-                    <div className="site-foot-nav container">
-                        <div className="site-foot-nav-right">
-                            <Link to="/">{site.title}</Link> © 2019
+                <div className="viewport-top">
+                    {/* The main header section on top of the screen */}
+                    <header className="site-head">
+                        <div className="container">
+                            <nav className="site-nav">
+                                <div className="site-nav-left">
+                                    {/* The navigation items as setup in Ghost */}
+                                    <Navigation data={site.navigation} navClass="site-nav-item" />
+                                </div>
+                            </nav>
                         </div>
-                    </div>
-                </footer>
+                    </header>
 
+                    <main className="site-main">
+                        {/* All the main content gets inserted here, index.js, post.js */}
+                        {children}
+                    </main>
+
+                </div>
+
+                <div className="viewport-bottom">
+                    {/* The footer at the very bottom of the screen */}
+                    <footer className="site-foot">
+                        <div className="site-foot-nav container">
+                            <div className="site-foot-nav-right">
+                                <Link to="/">{site.title}</Link> © 2019
+                            </div>
+                        </div>
+                    </footer>
+
+                </div>
             </div>
-        </div>
 
-    </>
+        </>
     )
 }
 
