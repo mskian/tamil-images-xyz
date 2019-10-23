@@ -19,7 +19,7 @@ const PostCard = ({ post }) => {
             </header>
             <footer className="post-card-footer">
                 <div className="post-card-footer-left">
-                    <span className="post-meta">Posted By &#x270f; { post.primary_author.name }</span> &nbsp;&nbsp; <time className="post-meta" dateTime={post.updated_at}>&#x1f5d3; {post.updated_at_pretty}</time>
+                    <span className="post-meta">Posted By &#x270f; { post.primary_author.name }</span> &nbsp;&nbsp; <time className="post-meta" dateTime={post.updated_at_zone}>&#x1f5d3; {post.updated_at_pretty}</time>
                 </div>
             </footer>
         </Link>
@@ -31,6 +31,8 @@ PostCard.propTypes = {
         slug: PropTypes.string.isRequired,
         title: PropTypes.string.isRequired,
         feature_image: PropTypes.string,
+        updated_at_pretty: PropTypes.string,
+        updated_at_zone: PropTypes.string,
         featured: PropTypes.bool,
         tags: PropTypes.arrayOf(
             PropTypes.shape({
