@@ -32,10 +32,10 @@
     "eslint-plugin-react": "7.16.0"
   },
   "dependencies": {
-    "@tryghost/helpers": "1.1.16",
-    "@tryghost/helpers-gatsby": "1.0.19",
+    "@tryghost/helpers": "1.1.17",
+    "@tryghost/helpers-gatsby": "1.0.20",
     "cheerio": "^1.0.0-rc.3",
-    "gatsby": "2.16.5",
+    "gatsby": "2.17.1",
     "gatsby-awesome-pagination": "0.3.4",
     "gatsby-image": "2.2.29",
     "gatsby-plugin-advanced-sitemap": "1.4.5",
@@ -50,11 +50,11 @@
     "gatsby-plugin-scroll-indicator": "0.1.4",
     "gatsby-plugin-sharp": "2.2.32",
     "gatsby-source-filesystem": "2.1.33",
-    "gatsby-source-ghost": "3.5.1",
-    "gatsby-transformer-sharp": "2.2.23",
+    "gatsby-source-ghost": "4.0.0",
+    "gatsby-transformer-sharp": "2.3.0",
     "lodash": "4.17.15",
-    "react": "16.10.2",
-    "react-dom": "16.10.2",
+    "react": "16.11.0",
+    "react-dom": "16.11.0",
     "react-helmet": "5.2.1"
   }
 }
