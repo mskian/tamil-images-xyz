@@ -30,7 +30,7 @@ const Post = ({ data, location }) => {
                     <article className="content">
                         <section className="post-full-content">
                             <h1 className="content-title">{post.title}</h1>
-                            <time className="post-meta" dateTime={post.updated_at_zone}>{post.updated_at_pretty}</time>
+                            <time className="post-meta" dateTime={post.updated_at_zone}>Updated on &#x1f5d3; {post.updated_at_pretty}</time>
                             <br />
                             <br />
                             {/* The main post content */ }

@@ -154,14 +154,15 @@ table {
     border-spacing: 0;
     border-collapse: collapse;
 }
-img {
-    max-width: 100%;
-    height: auto;
+.content-body, img {
+    max-width: 90%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
 }
 html {
     box-sizing: border-box;
-    font-family: 'Meera Inimai', sans-serif;
-
+    font-family: 'Catamaran', sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
@@ -304,25 +305,23 @@ html {
     overflow-y: scroll;
     font-size: 62.5%;
     background: var(--color-base);
-
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
     overflow-x: hidden;
-    color: #3c484e;
-    font-family: 'Meera Inimai', sans-serif;
-    font-size: 1.5rem;
-    line-height: 1.6em;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: 'Catamaran', sans-serif;
+    font-size: 16px;
+    line-height: 1.618;
     font-weight: 400;
-    font-style: normal;
     letter-spacing: 0;
-    text-rendering: optimizeLegibility;
-    background: #fff;
-
+    background-color: #ffffff;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -moz-font-feature-settings: "liga" on;
+	-moz-font-smoothing: grayscale;
 }
 
 ::selection {
@@ -361,7 +360,16 @@ article p {
 }
 
 p {
+    letter-spacing: .03em;
     word-wrap: break-word;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 18px;
+    color: #221f1f;
+    word-wrap: break-word;
+    -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased !important;
+   -moz-font-smoothing: antialiased !important;
+   text-rendering: optimizelegibility !important;
 }
 
 audio,
@@ -492,33 +500,33 @@ h6 {
 
 h1 {
     margin: 0 0 0.5em 0;
-    font-size: 4rem;
+    font-size: 21px;
     font-weight: 700;
 }
 @media (max-width: 500px) {
     h1 {
-        font-size: 2rem;
+        font-size: 21px;
     }
 }
 
 h2 {
     margin: 1.5em 0 0.5em 0;
-    font-size: 2rem;
+    font-size: 20px;
 }
 @media (max-width: 500px) {
     h2 {
-        font-size: 1.8rem;
+        font-size: 20px;
     }
 }
 
 h3 {
     margin: 1.5em 0 0.5em 0;
-    font-size: 1.8rem;
+    font-size: 20px;
     font-weight: 500;
 }
 @media (max-width: 500px) {
     h3 {
-        font-size: 1.7rem;
+        font-size: 20px;
     }
 }
 
@@ -565,7 +573,11 @@ h6 {
 .content-body {
     display: flex;
     flex-direction: column;
-    font-family: 'Meera Inimai', sans-serif;
+    font-family: 'Catamaran', sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-font-smoothing: antialiased !important;
+    text-rendering: optimizelegibility !important;
 }
 
 .post-full-content {
@@ -587,28 +599,28 @@ h6 {
 .content-body h4,
 .content-body h5,
 .content-body h6 {
-    font-family: 'Meera Inimai', sans-serif;
+    font-family: 'Catamaran', sans-serif;
 }
 
 .content-body h1 {
     margin: 1.0em 0 0.5em 0;
-    font-size: 3.4rem;
+    font-size: 20px;
     font-weight: 700;
 }
 @media (max-width: 500px) {
     .content-body h1 {
-        font-size: 2.8rem;
+        font-size: 18px;
     }
 }
 
 .content-title {
     margin: 0 0 0.8em;
-    font-size: 5rem;
+    font-size: 30px;
 }
 @media (max-width: 500px) {
     .content-title {
         margin: 0.8em 0;
-        font-size: 3.4rem;
+        font-size: 28px;
     }
     .content {
         font-size: 1.8rem;
@@ -617,7 +629,7 @@ h6 {
 
 .content-body h2 {
     margin: 0.8em 0 0.4em 0;
-    font-size: 3.2rem;
+    font-size: 28px;
     font-weight: 700;
 }
 @media (max-width: 500px) {
@@ -653,7 +665,7 @@ h6 {
     margin: 0.5em 0;
     padding: 1em 0 1.5em;
     border: 0;
-    font-family: 'Meera Inimai', sans-serif;
+    font-family: 'Catamaran', sans-serif;
     color: var(--color-primary);
     font-style: italic;
     font-size: 3.2rem;
@@ -845,7 +857,8 @@ pre code *{
 
 
 .post-card-title {
-    margin: 0 0 10px 0;
+    font-size: 18px;
+    margin: 2vw 0 0;
     padding: 0;
 }
 
@@ -1002,6 +1015,8 @@ pre code *{
 .pagination {
     position: relative;
     display: flex;
+    font-size: 16px;
+    font-weight: 700;
     justify-content: space-between;
     align-items: center;
     margin: 4vw 0 0;
@@ -1027,7 +1042,6 @@ pre code *{
     color: var(--color-secondary);
     font-size: 1.3rem;
 }
-
 
 /* Footer
 /* ---------------------------------------------------------- */
@@ -1072,7 +1086,7 @@ table {
     display: inline-block;
     overflow-x: auto;
     margin: 0px auto;
-    font-family: 'Meera Inimai', sans-serif;
+    font-family: 'Catamaran', sans-serif;
     white-space: nowrap;
     border-spacing: 0;
     border-collapse: collapse;
@@ -1103,7 +1117,7 @@ table th:nth-child(even){background-color:#555}
     border-radius: 3px;
     box-shadow: inset 0 0 0 1px rgba(0,0,0,.14);
     -webkit-font-smoothing: subpixel-antialiased;
-    font-family: 'Meera Inimai', sans-serif;
+    font-family: 'Catamaran', sans-serif;
 }
 .button-link:hover {
 background: linear-gradient(#36a6e2,#29a0e0 60%,#29a0e0 90%,#4fb7f0);

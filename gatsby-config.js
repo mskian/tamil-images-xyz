@@ -175,7 +175,7 @@ module.exports = {
             options: {
                 fonts: [
                     {
-                        family: `Meera Inimai`,
+                        family: `Catamaran`,
                         subsets: [`tamil`],
                         variants: [`400`, `700`],
                     },
