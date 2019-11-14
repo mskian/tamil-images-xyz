@@ -171,6 +171,17 @@ html {
 *:after {
     box-sizing: inherit;
 }
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(168, 19, 253, 0.733);
+    border-radius: 8px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(231, 217, 18, 0.5);
+  }
 a {
     background-color: transparent;
 }
@@ -476,15 +487,6 @@ blockquote cite a {
     font-weight: normal;
 }
 
-a {
-    color: #26a8ed;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 h1,
 h2,
 h3,
@@ -706,7 +708,13 @@ pre code{
 pre code *{
     color:inherit
 }
-
+a {
+    color: rgb(73, 53, 253);
+    text-decoration: none;
+}
+a:hover {
+  color: #0f00df;
+}
 /* Header
 /* ---------------------------------------------------------- */
 
@@ -714,19 +722,25 @@ pre code *{
     padding-top: 20px;
     padding-bottom: 20px;
     color: #fff;
-    background: #4568DC;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background-color: #ffd900;
+    overflow: auto;
+    word-break: normal !important;
+    word-wrap: normal !important;
+    white-space: pre !important;
 }
 
 .site-nav-item {
     display: inline-block;
     padding: 5px 10px;
-    color: #fff;
-    
+    color: #5a5a5a;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px; 
 }
-
+.site-nav a:hover {
+    color: #ff69b4;
+  }
 .site-nav-item:hover {
     text-decoration: none;
     opacity: 1;
@@ -1015,11 +1029,14 @@ pre code *{
 .pagination {
     position: relative;
     display: flex;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     justify-content: space-between;
     align-items: center;
+    vertical-align: middle;
     margin: 4vw 0 0;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .pagination a {
@@ -1028,7 +1045,7 @@ pre code *{
     border: var(--color-border) 1px solid;
     color: var(--color-secondary);
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     line-height: 1em;
     border-radius: var(--radius);
 }
@@ -1039,6 +1056,7 @@ pre code *{
     width: 100px;
     margin-left: -50px;
     text-align: center;
+    vertical-align: middle;
     color: var(--color-secondary);
     font-size: 1.3rem;
 }
@@ -1047,28 +1065,26 @@ pre code *{
 /* ---------------------------------------------------------- */
 
 .site-foot {
-    padding: 20px 0 40px 0;
-    color: rgba(255,255,255,0.7);
+    padding: 30px 0 40px 0;
+    color: #5a5a5a;
+    font-weight: bold;
     font-size: 1.3rem;
-    background: #ec008c;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background-color: #ecf0f1;
 }
 
 .site-foot-nav {
-    display: flex;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
+    vertical-align: middle; 
 }
 
 .site-foot-nav a {
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.site-foot-nav a:hover {
+    color: #1c69dd;
     text-decoration: none;
-    color: rgb(24, 22, 22);
+}
+.site-foot-nav a:hover {
+    color: #ff69b4;
 }
 
 .site-foot-nav-right a {
