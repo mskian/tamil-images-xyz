@@ -121,7 +121,7 @@ export const ghostPostFields = graphql`
 
         # Additional fields
         url
-        visibility
+        canonical_url
         uuid
         page
         codeinjection_foot
