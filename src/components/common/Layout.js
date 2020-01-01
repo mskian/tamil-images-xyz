@@ -58,7 +58,7 @@ const DefaultLayout = ({ data, children, bodyClass }) => {
                     <footer className="site-foot">
                         <div className="site-foot-nav container">
                             <div className="site-foot-nav">
-                                <Link to="/">{site.title}</Link> © 2019 - tamilimages.xyz
+                                <Link to="/">{site.title}</Link> © 2020 - tamilimages.xyz
                             </div>
                         </div>
                     </footer>
