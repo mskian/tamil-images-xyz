@@ -6,6 +6,10 @@
 	"major": {
 		"automerge": false
 	},
+	"lockFileMaintenance": {
+		"enabled": true,
+		"automerge": false
+	},
 	"ignoreDeps": [
 		"gatsby-source-ghost",
 		"gatsby-plugin-advanced-sitemap"
