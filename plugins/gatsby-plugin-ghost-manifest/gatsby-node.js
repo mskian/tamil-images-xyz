@@ -32,12 +32,8 @@ function generateIcons(icons, srcIcon) {
   });
 }
 
-exports.onPostBuild =
-/*#__PURE__*/
-function () {
-  var _ref = (0, _asyncToGenerator2.default)(
-  /*#__PURE__*/
-  _regenerator.default.mark(function _callee(_ref2, pluginOptions) {
+exports.onPostBuild = /*#__PURE__*/function () {
+  var _ref = (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee(_ref2, pluginOptions) {
     var graphql, icon, manifest, _ref3, data, siteTitle, iconPath;
 
     return _regenerator.default.wrap(function _callee$(_context) {
